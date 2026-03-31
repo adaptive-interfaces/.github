@@ -27,7 +27,7 @@ Each repository in the `adaptive-interfaces` organization includes a
 
 | Repository                                                                                    | Kind               | Description                                                                     |
 | --------------------------------------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------- |
-| [adaptive-conformance-spec](https://github.com/adaptive-interfaces/adaptive-conformance-spec) | Foundational skill | Behavioral protocol for agents working in unfamiliar codebases or tool surfaces |
+| [adaptive-conformance-specification](https://github.com/adaptive-interfaces/adaptive-conformance-specification) | Foundational skill | Behavioral protocol for agents working in unfamiliar codebases or tool surfaces |
 | [adaptive-tool-discovery](https://github.com/adaptive-interfaces/adaptive-tool-discovery)     | Domain skill       | Learn and map the capabilities of an external tool set                          |
 | [adaptive-onboarding](https://github.com/adaptive-interfaces/adaptive-onboarding)             | Domain skill       | Build team-member-level context for a specific codebase or project              |
 | [adaptive-skill-lab](https://github.com/adaptive-interfaces/adaptive-skill-lab)               | Lab                | Incubator for developing, testing, and refining skills                          |
