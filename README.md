@@ -1,7 +1,9 @@
 # .github
 
-[![Link Check](https://github.com/adaptive-interfaces/.github/actions/workflows/links.yml/badge.svg?branch=main)](https://github.com/adaptive-interfaces/.github/actions/workflows/links.yml)
+
 [![Markdown Lint](https://github.com/adaptive-interfaces/.github/actions/workflows/md-lint.yml/badge.svg?branch=main)](https://github.com/adaptive-interfaces/.github/actions/workflows/md-lint.yml)
+[![Check Links](https://github.com/adaptive-interfaces/.github/actions/workflows/links.yml/badge.svg?branch=main)](https://github.com/adaptive-interfaces/.github/actions/workflows/links.yml)
+[![Dependabot](https://img.shields.io/badge/Dependabot-enabled-brightgreen.svg)](https://github.com/adaptive-interfaces/.github/security)
 
 Organization profile and shared infrastructure for
 [Adaptive Interfaces](https://github.com/adaptive-interfaces).
