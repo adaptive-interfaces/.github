@@ -1,13 +1,31 @@
 # Adaptive Interfaces
 
-**Adaptive Interfaces** is an open framework for designing how intelligent systems interact with complex environments.
+Adaptive Interfaces is an open framework
+for designing how intelligent systems
+interact with complex environments.
 
-This work focuses on the **interface layer**, the boundary where knowledge, capability, and intent are exchanged between:
+This work focuses on the interface layer,
+the boundary where knowledge, capability, and
+intent are exchanged between:
 
 - humans and AI systems
 - AI systems and codebases
 - AI systems and tools (APIs, CLIs, services)
 - AI systems and other AI systems
+
+## Start Here
+
+**→ [adaptive-guide](https://github.com/adaptive-interfaces/adaptive-guide)**
+
+When agent output is technically correct
+but wrong for your team,
+the guide explains why and what to do about it.
+
+It is not a tutorial.
+It is an engineering discipline guide:
+how to write the necessary priors,
+how to write the context agents need,
+and how to evaluate whether it is working.
 
 ## Core Idea
 
@@ -18,52 +36,78 @@ Intelligent systems act within environments that have:
 - explicit constraints
 - domain-specific expectations
 
-Correct behavior is a function of **alignment with the interface through which that capability is applied**.
+Correct behavior is a function of
+alignment with the environment
+through which capability is applied.
 
-**Adaptive Interfaces** studies how systems:
+Adaptive Interfaces focuses on how systems:
 
-- **infer** the structure of an environment
-- **adapt** to its constraints and patterns
-- **act** in ways that are consistent with local expectations
+- infer the structure of an environment
+- adapt to its constraints and patterns
+- act in ways consistent with local expectations
 
 ## Repositories
 
-| Repository | Kind | Description |
-| --- | --- | --- |
+| Repository                                                                                                      | Kind               | Description                                                                     |
+| --------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------- |
+| [adaptive-guide](https://github.com/adaptive-interfaces/adaptive-guide)                                         | Guide              | How to design agents that work as engineering team members                      |
 | [adaptive-conformance-specification](https://github.com/adaptive-interfaces/adaptive-conformance-specification) | Foundational skill | Behavioral protocol for agents working in unfamiliar codebases or tool surfaces |
-| [adaptive-tool-discovery](https://github.com/adaptive-interfaces/adaptive-tool-discovery) | Domain skill | Learn and map the capabilities of an external tool set |
-| [adaptive-onboarding](https://github.com/adaptive-interfaces/adaptive-onboarding) | Domain skill | Build team-member-level context for a specific codebase or project |
-| [adaptive-skill-lab](https://github.com/adaptive-interfaces/adaptive-skill-lab) | Lab | Incubator for developing, testing, and refining skills |
+| [adaptive-tool-discovery](https://github.com/adaptive-interfaces/adaptive-tool-discovery)                       | Domain skill       | Learn and map the capabilities of an external tool set                          |
+| [adaptive-onboarding](https://github.com/adaptive-interfaces/adaptive-onboarding)                               | Domain skill       | Build team-member-level context for a specific codebase or project              |
+| [adaptive-sensor-testing](https://github.com/adaptive-interfaces/adaptive-sensor-testing)                       | Worked example     | Complete example: sensor data testing using all three priors                    |
+| [adaptive-skill-lab](https://github.com/adaptive-interfaces/adaptive-skill-lab)                                 | Lab                | Incubator for developing, testing, and refining skills                          |
+
+## Reading Order
+
+```text
+adaptive-guide                      #  start here
+adaptive-conformance-specification  #  foundational behavior (ACS)
+adaptive-tool-discovery             #  map available tools (ATD)
+adaptive-onboarding                 #  capture team conventions (AO)
+adaptive-sensor-testing             #  see a complete worked example
+adaptive-skill-lab                  #  build and test your skills
+```
 
 ## Scope
 
-This project focus is **intelligent systems interacting with existing systems**.
+This project focuses on intelligent systems
+interacting with existing systems.
 
 Key areas include:
 
-### 1. Environment Inference
+### Environment Inference
 
 - Codebase capability inference
 - Engineering pattern inference
 - Interface surface modeling
 
-### 2. Behavior Specification
+### Behavior Specification
 
 - Skills and task definitions
 - Constraints and boundaries
 - Decision discipline
 
-### 3. Adaptation
+### Adaptation
 
 - Entering and aligning to new environments
 - Pattern alignment and constraint adherence
 - Handling ambiguity and conflicting signals
 
-### 4. Evaluation
+### Evaluation
 
 - Measuring behavioral correctness
 - Assessing alignment with local engineering practices
 - Reproducibility and accountability
+
+## The Key Distinction
+
+A prompt template tells an agent what to say.
+A skill specification tells an agent how to think
+and what evidence to require before acting.
+
+Engineers who write skills rather than templates
+produce agents that are reliable across novel situations —
+not just the situations the template anticipated.
 
 ## Non-Goals
 
@@ -72,14 +116,15 @@ This project is:
 - Not prompt engineering
 - Not tied to a specific model or vendor
 - Not a wrapper around existing APIs
-- Not limited to LLMs
+- Not limited to any specific class of AI system
 
-While current work focuses on modern AI systems (including LLM-based agents),
-the framework is **model-agnostic and durable**.
+While current work focuses on modern AI systems
+including LLM-based agents,
+the framework is model-agnostic and durable.
 
 ## Direction
 
-Adaptive Interfaces aims to establish:
+Adaptive Interfaces establishes:
 
 - structured methods for environment-aware AI behavior
 - reusable specifications for agent interaction
@@ -89,3 +134,5 @@ Adaptive Interfaces aims to establish:
 ## Status
 
 Early-stage, specification-first.
+Skills are MIT licensed and designed to be forked and tuned
+for specific needs.

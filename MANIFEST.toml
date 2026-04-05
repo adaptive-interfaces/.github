@@ -1,0 +1,45 @@
+# ============================================================
+# .github/MANIFEST.toml
+# ============================================================
+
+schema = "adaptive-interfaces-manifest-1"
+schema_url = "https://github.com/adaptive-interfaces/.github/blob/main/schemas/adaptive-interfaces-manifest-1.md"
+
+[meta]
+framework = "Adaptive Interfaces"
+framework_url = "https://github.com/adaptive-interfaces"
+framework_note = "Provides definitions and conventions for adaptive-interfaces manifest semantics."
+description = "Declarative claim of repository intent, scope, and role."
+purpose = "To make explicit the boundaries, responsibilities, and expectations of this repository relative to others."
+
+[repo]
+name = ".github"
+kind = "infrastructure"
+description = "Repository containing shared GitHub workflows, actions, and configuration for the adaptive-interfaces organization."
+
+[layer]
+space = "Organization"
+role = "automation and orchestration infrastructure"
+
+[depends]
+required = ["python>=3.14", "uv"]
+optional = ["pytest", "ruff", "pyright"]
+
+[provides]
+artifacts = [
+    "MANIFEST.toml",
+    "CITATION.cff",
+    "LICENSE",
+    "README.md",
+    "src/checks/",
+]
+
+[scope]
+includes = [
+    "automatic generation of repository health checks for adaptive-interfaces organization",
+]
+excludes = []
+
+[citation]
+cff = "CITATION.cff"
+preferred = "repo"
