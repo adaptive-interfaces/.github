@@ -41,7 +41,7 @@ Each repository in the `adaptive-interfaces` organization includes a
 Before pushing changes, please verify against the local `.markdownlint.json`:
 
 ```shell
-npx markdownlint-cli2 --fix "**/*.md"
+npx markdownlint-cli2 --fix "**/*.md" "!**/.venv/**"
 ```
 
 ## Organization Checks

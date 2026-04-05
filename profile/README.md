@@ -27,6 +27,20 @@ how to write the necessary priors,
 how to write the context agents need,
 and how to evaluate whether it is working.
 
+## Then Apply It
+
+**→ [adaptive-playbook](https://github.com/adaptive-interfaces/adaptive-playbook)**
+
+The playbook defines the **execution process**:
+
+- how to set up priors
+- how to load context layers (ACS, ATD, AO, domain)
+- how to run tasks with agents
+- how to evaluate and iterate
+
+The guide defines the discipline;
+the playbook defines how to apply it.
+
 ## Core Idea
 
 Intelligent systems act within environments that have:
@@ -51,6 +65,7 @@ Adaptive Interfaces focuses on how systems:
 | Repository                                                                                                      | Kind               | Description                                                                     |
 | --------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------- |
 | [adaptive-guide](https://github.com/adaptive-interfaces/adaptive-guide)                                         | Guide              | > How to structure agent context for team-conforming output                     |
+| [adaptive-playbook](https://github.com/adaptive-interfaces/adaptive-playbook)                                   | Playbook           | Execution protocol for configuring agents to produce team-conforming output     |
 | [adaptive-conformance-specification](https://github.com/adaptive-interfaces/adaptive-conformance-specification) | Foundational skill | Behavioral protocol for agents working in unfamiliar codebases or tool surfaces |
 | [adaptive-tool-discovery](https://github.com/adaptive-interfaces/adaptive-tool-discovery)                       | Domain skill       | Learn and map the capabilities of an external tool set                          |
 | [adaptive-onboarding](https://github.com/adaptive-interfaces/adaptive-onboarding)                               | Domain skill       | Build team-member-level context for a specific codebase or project              |
@@ -60,12 +75,15 @@ Adaptive Interfaces focuses on how systems:
 ## Reading Order
 
 ```text
-adaptive-guide                      #  start here
+adaptive-guide                      # discipline (what and why)
+adaptive-playbook                   # execution (how)
+
 adaptive-conformance-specification  #  foundational behavior (ACS)
 adaptive-tool-discovery             #  map available tools (ATD)
 adaptive-onboarding                 #  capture team conventions (AO)
-adaptive-sensor-testing             #  see a complete worked example
-adaptive-skill-lab                  #  build and test your skills
+
+adaptive-sensor-testing             # worked example
+adaptive-skill-lab                  # build and refine skills
 ```
 
 ## Scope
@@ -105,9 +123,12 @@ A prompt template tells an agent what to say.
 A skill specification tells an agent how to think
 and what evidence to require before acting.
 
-Engineers who write skills rather than templates
-produce agents that are reliable across novel situations —
-not just the situations the template anticipated.
+A guide explains the discipline.
+A playbook defines execution.
+
+Engineers who implement both
+produce agents that are reliable across **novel situations**,
+not just situations the template anticipated.
 
 ## Non-Goals
 
@@ -136,3 +157,7 @@ Adaptive Interfaces establishes:
 Early-stage, specification-first.
 Skills are MIT licensed and designed to be forked and tuned
 for specific needs.
+
+Playbooks are expected to evolve with practice and usage.
+
+Examples and all repos are still under active development.
