@@ -172,7 +172,7 @@ def analyse_repo(client: httpx.Client, repo: dict) -> RepoReport:
     actions_url = f"https://github.com/{ORG}/{name}/actions"
     for wf in report.workflows:
         if wf.status == "fail":
-            report.issues.append(f"workflow failing: {wf.name}\n  -> {actions_url}")
+            report.issues.append(f"workflow failing: {wf.name}\n  -> <{actions_url}>")
         if (
             name not in SKIP_THIN_CALLER
             and wf.status != "missing"
@@ -339,7 +339,7 @@ def render_markdown(reports: list[RepoReport]) -> str:
     clean = sum(1 for r in reports if not r.archived and not r.issues)
 
     lines.append("")
-    lines.append(f"**{clean}/{total} repos clean**")
+    lines.append(f"## {clean}/{total} repos clean")
     lines.append("")
 
     return "\n".join(lines)
