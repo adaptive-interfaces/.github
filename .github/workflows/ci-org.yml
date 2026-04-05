@@ -130,13 +130,18 @@ jobs:
       - name: C2) Add coverage to job summary (if available)
         if: always()
         run: |
-          echo "## Test Coverage Report" >> "$GITHUB_STEP_SUMMARY"
           if [ -f ".coverage" ]; then
-            echo '```' >> "$GITHUB_STEP_SUMMARY"
-            uv run coverage report >> "$GITHUB_STEP_SUMMARY"
-            echo '```' >> "$GITHUB_STEP_SUMMARY"
+            {
+              echo "## Test Coverage Report"
+              echo '```'
+              uv run coverage report
+              echo '```'
+            } >> "$GITHUB_STEP_SUMMARY"
           else
-            echo "No coverage data available." >> "$GITHUB_STEP_SUMMARY"
+            {
+              echo "## Test Coverage Report"
+              echo "No coverage data available."
+            } >> "$GITHUB_STEP_SUMMARY"
           fi
 
       - name: C3) Upload coverage artifact (if available)

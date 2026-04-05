@@ -77,7 +77,9 @@ jobs:
       - name: D1) Build docs with Zensical
         run: |
           if [ ! -f "zensical.toml" ]; then
-            echo "zensical.toml not found; refusing to deploy." >> "$GITHUB_STEP_SUMMARY"
+            {
+              echo "zensical.toml not found; refusing to deploy."
+            } >> "$GITHUB_STEP_SUMMARY"
             exit 1
           fi
           uv run zensical build
@@ -88,9 +90,11 @@ jobs:
         # build likely failed or the configuration is incorrect.
         run: |
           if [ ! -d "site" ]; then
-            echo "## Documentation build output missing" >> "$GITHUB_STEP_SUMMARY"
-            echo "Expected directory 'site/' was not created." >> "$GITHUB_STEP_SUMMARY"
-            echo "Check the Zensical build step and zensical.toml configuration." >> "$GITHUB_STEP_SUMMARY"
+            {
+              echo "## Documentation build output missing"
+              echo "Expected directory 'site/' was not created."
+              echo "Check the Zensical build step and zensical.toml configuration."
+            } >> "$GITHUB_STEP_SUMMARY"
             exit 1
           fi
 
