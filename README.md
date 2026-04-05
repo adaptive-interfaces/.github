@@ -1,7 +1,7 @@
 # .github
 
 [![Version](https://img.shields.io/badge/version-v0.2.2-blue)](https://github.com/adaptive-interfaces/.github/releases)
-[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/license/MIT)
 [![CI](https://github.com/adaptive-interfaces/.github/actions/workflows/ci-org.yml/badge.svg?branch=main)](https://github.com/adaptive-interfaces/.github/actions/workflows/ci-org.yml)
 [![Markdown Lint](https://github.com/adaptive-interfaces/.github/actions/workflows/md-lint.yml/badge.svg?branch=main)](https://github.com/adaptive-interfaces/.github/actions/workflows/md-lint.yml)
 [![Check Links](https://github.com/adaptive-interfaces/.github/actions/workflows/links.yml/badge.svg?branch=main)](https://github.com/adaptive-interfaces/.github/actions/workflows/links.yml)
@@ -52,7 +52,7 @@ And it must be set as an environment variable before running the script.
 
 ### Step 1. Create the token
 
-Go to https://github.com/settings/tokens?type=beta (fine-grained tokens, recommended)
+Go to <https://github.com/settings/tokens?type=beta> (fine-grained tokens, recommended)
 
 - Resource owner: adaptive-interfaces (the org)
 - Repository access: All repositories

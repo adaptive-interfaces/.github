@@ -151,26 +151,7 @@ jobs:
       # DEPLOY PRE-CHECKS: Validate docs build before any deployment
       # ============================================================
 
-      - name: D1) Fetch shared MkDocs base config (if mkdocs.yml present)
-        # OBS: Legacy; remove once all repos migrated to Zensical.
-        run: |
-          if [ -f "mkdocs.yml" ] || [ -f "mkdocs.yaml" ]; then
-            curl --fail -o mkdocs.base.yaml \
-              https://raw.githubusercontent.com/adaptive-interfaces/.github/refs/heads/main/docs-theme/mkdocs.base.yaml
-          else
-            echo "No mkdocs config found; skipping base config fetch."
-          fi
-
-      - name: D2) Build docs with MkDocs (if mkdocs.yml present)
-        # OBS: Legacy; remove once all repos migrated to Zensical.
-        run: |
-          if [ -f "mkdocs.yml" ] || [ -f "mkdocs.yaml" ]; then
-            uv run mkdocs build --strict
-          else
-            echo "No mkdocs config found; skipping MkDocs build."
-          fi
-
-      - name: D3) Build docs with Zensical (if zensical.toml present)
+      - name: D1) Build docs with Zensical (if zensical.toml present)
         run: |
           if [ -f "zensical.toml" ]; then
             uv run zensical build
