@@ -1,5 +1,7 @@
 # Adaptive Interfaces
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/license/MIT)
+
 Adaptive Interfaces is an open framework
 for designing how intelligent systems
 interact with complex environments.
@@ -13,9 +15,17 @@ intent are exchanged between:
 - AI systems and tools (APIs, CLIs, services)
 - AI systems and other AI systems
 
+## Manifest Schema
+
+All Adaptive Interfaces repositories include a `MANIFEST.toml` describing the repo contents.
+
+| Repository | Purpose |
+| ---------- | ------- |
+| [adaptive-manifest-schema](https://github.com/adaptive-interfaces/adaptive-manifest-schema) | Canonical `MANIFEST.toml` schema; no upstream dependencies, consumed by all repos |
+
 ## Start Here
 
-**→ [adaptive-guide](https://github.com/adaptive-interfaces/adaptive-guide)**
+**-> [adaptive-guide](https://github.com/adaptive-interfaces/adaptive-guide)**
 
 When agent output is technically correct
 but wrong for your team,
@@ -29,7 +39,7 @@ and how to evaluate whether it is working.
 
 ## Then Apply It
 
-**→ [adaptive-playbook](https://github.com/adaptive-interfaces/adaptive-playbook)**
+**-> [adaptive-playbook](https://github.com/adaptive-interfaces/adaptive-playbook)**
 
 The playbook defines the **execution process**:
 
@@ -62,15 +72,33 @@ Adaptive Interfaces focuses on how systems:
 
 ## Repositories
 
-| Repository                                                                                                      | Kind               | Description                                                                     |
-| --------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------- |
-| [adaptive-guide](https://github.com/adaptive-interfaces/adaptive-guide)                                         | Guide              | > How to structure agent context for team-conforming output                     |
-| [adaptive-playbook](https://github.com/adaptive-interfaces/adaptive-playbook)                                   | Playbook           | Execution protocol for configuring agents to produce team-conforming output     |
+### Foundation
+
+| Repository | Kind | Description |
+| ---------- | ---- | ----------- |
+| [adaptive-guide](https://github.com/adaptive-interfaces/adaptive-guide) | Guide | How to structure agent context for team-conforming output |
+| [adaptive-playbook](https://github.com/adaptive-interfaces/adaptive-playbook) | Playbook | Execution protocol for configuring agents to produce team-conforming output |
+
+### Skills
+
+| Repository | Kind | Description |
+| ---------- | ---- | ----------- |
 | [adaptive-conformance-specification](https://github.com/adaptive-interfaces/adaptive-conformance-specification) | Foundational skill | Behavioral protocol for agents working in unfamiliar codebases or tool surfaces |
-| [adaptive-tool-discovery](https://github.com/adaptive-interfaces/adaptive-tool-discovery)                       | Domain skill       | Learn and map the capabilities of an external tool set                          |
-| [adaptive-onboarding](https://github.com/adaptive-interfaces/adaptive-onboarding)                               | Domain skill       | Build team-member-level context for a specific codebase or project              |
-| [adaptive-sensor-testing](https://github.com/adaptive-interfaces/adaptive-sensor-testing)                       | Worked example     | Complete example: sensor data testing using all three priors                    |
-| [adaptive-skill-lab](https://github.com/adaptive-interfaces/adaptive-skill-lab)                                 | Lab                | Incubator for developing, testing, and refining skills                          |
+| [adaptive-tool-discovery](https://github.com/adaptive-interfaces/adaptive-tool-discovery) | Domain skill | Learn and map the capabilities of an external tool set |
+| [adaptive-onboarding](https://github.com/adaptive-interfaces/adaptive-onboarding) | Domain skill | Build team-member-level context for a specific codebase or project |
+
+### Domain Simulation
+
+| Repository | Kind | Description |
+| ---------- | ---- | ----------- |
+| [ptat-sim](https://github.com/adaptive-interfaces/ptat-sim) | Simulation | Deterministic PTAT sensor engine and stable typed interface for agent task assignment |
+
+### Examples and Labs
+
+| Repository | Kind | Description |
+| ---------- | ---- | ----------- |
+| [adaptive-sensor-testing](https://github.com/adaptive-interfaces/adaptive-sensor-testing) | Worked example | Sensor data testing and monitoring using all three priors; downstream consumer of ptat-sim |
+| [adaptive-skill-lab](https://github.com/adaptive-interfaces/adaptive-skill-lab) | Lab | Incubator for developing, testing, and refining skills |
 
 ## Reading Order
 
@@ -78,10 +106,11 @@ Adaptive Interfaces focuses on how systems:
 adaptive-guide                      # discipline (what and why)
 adaptive-playbook                   # execution (how)
 
-adaptive-conformance-specification  #  foundational behavior (ACS)
-adaptive-tool-discovery             #  map available tools (ATD)
-adaptive-onboarding                 #  capture team conventions (AO)
+adaptive-conformance-specification  # foundational behavior (ACS)
+adaptive-tool-discovery             # map available tools (ATD)
+adaptive-onboarding                 # capture team conventions (AO)
 
+ptat-sim                            # domain simulation and interface contract
 adaptive-sensor-testing             # worked example
 adaptive-skill-lab                  # build and refine skills
 ```
