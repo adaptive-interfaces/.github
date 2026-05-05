@@ -48,6 +48,8 @@ and how to evaluate whether it is working.
 
 **-> [adaptive-playbook](https://github.com/adaptive-interfaces/adaptive-playbook)**
 
+For example: [SCAFFOLD NEW REPO](https://github.com/adaptive-interfaces/adaptive-playbook/blob/main/patterns/scaffold-new-repo.md)
+
 The playbook defines the **execution process**:
 
 - how to set up priors
@@ -76,8 +78,6 @@ Adaptive Interfaces focuses on how systems:
 - infer the structure of an environment
 - adapt to its constraints and patterns
 - act in ways consistent with local expectations
-
-Try it: [SCAFFOLD NEW REPO](https://github.com/adaptive-interfaces/adaptive-playbook/blob/main/patterns/scaffold-new-repo.md)
 
 ## Repositories
 
