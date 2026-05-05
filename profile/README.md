@@ -15,6 +15,14 @@ intent are exchanged between:
 - AI systems and tools (APIs, CLIs, services)
 - AI systems and other AI systems
 
+The research question is: 
+
+<mark>
+>If you give an agent the right onboarding artifacts,
+>can it produce a complex codebase that a real team can read, extend, and maintain,
+>rather than a 2000-line dump that only the agent understands?
+</mark>
+
 ## Manifest Schema
 
 All Adaptive Interfaces repositories include a `MANIFEST.toml` describing the repo contents.
