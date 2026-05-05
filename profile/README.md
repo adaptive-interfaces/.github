@@ -98,9 +98,13 @@ Adaptive Interfaces focuses on how systems:
 
 ### Domain Simulation
 
+Repos scaffolded using
+[PLAYBOOK/patterns/scaffold-new-repo.md](https://github.com/adaptive-interfaces/adaptive-playbook/blob/main/patterns/scaffold-new-repo.md).
+
 | Repository | Kind | Description |
 | ---------- | ---- | ----------- |
 | [ptat-sim](https://github.com/adaptive-interfaces/ptat-sim) | Simulation | Deterministic PTAT sensor engine and stable typed interface for agent task assignment |
+| [ptat-monitor](https://github.com/adaptive-interfaces/ptat-monitor) | Simulation | Configurable PTAT monitoring service and MCP interface; downstream consumer of ptat-sim and target system for agent test assignment |
 
 ### Examples and Labs
 
