@@ -38,7 +38,7 @@ jobs:
 
       - name: A1) Checkout repository code
         # WHY: Needed to read workflow files from the repository.
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       # ============================================================
       # BASIC CHECKS: GitHub Actions workflows
